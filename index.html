@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>كافي الفيروز - AL Fairouz Cafe</title>
+
+    <link rel="icon" sizes="32x32" href="images/logo.png">
+    <link rel="icon" sizes="192x192" href="images/logo.png">
+    <link rel="apple-touch-icon" href="images/logo.png">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="top-bar">
+            <div class="logo-center">
+                <div class="brand">
+                    <img src="images/logo.png" alt="شعار كافي الفيروز" class="logo">
+                    <h1>كافي الفيروز<br><span>AL Fairouz Cafe</span></h1>
+                </div>
+            </div>
+    
+            <div class="mobile-row">
+                <div class="search-box">
+                    <div class="search" role="search">
+                        <input id="q" type="search" placeholder="ابحث عن صنف ... (مثال: لوتس، كريب، موهيتو)">
+                    </div>
+                </div>
+    
+                <div class="table-box">
+                    <div id="tableBadge" class="table-badge"></div>
+                </div>
+            </div>
+    
+            <div class="change-table-row">
+                <button id="changeTableBtn" class="change-table-btn" type="button">
+                    تغيير الطاولة
+                </button>
+            </div>
+        </div>
+    
+        <div class="chips-wrapper">
+            <div id="chips"></div>
+        </div>
+    </header>
+
+    <button id="cartBtn" class="cart-btn" type="button">
+        🧺 اطلب الآن
+        <span id="cartCount" class="cart-count">0</span>
+    </button>
+
+    <main>
+        <div class="wrap">
+            <div id="menu" class="grid"></div>
+
+            <div class="note">
+                <h3>ملاحظة</h3>
+                <p>يوجد لدينا عرض لجميع مباريات كرة القدم.</p>
+                <p>يوجد لدينا حجوزات مساحات عمل.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        © <span id="y"></span> Designed By
+        <a href="https://wa.me/970597616471" target="_blank">Eng.Anas &</a>
+        <a href="https://wa.me/972598471353"> Mohammed</a>
+    </footer>
+
+    <!-- CART DRAWER -->
+    <div id="cartDrawer" class="cart-drawer" aria-hidden="true">
+        <div class="cart-panel">
+            <div class="cart-header">
+                <div class="cart-title">سلة الطلب</div>
+                <button id="closeCart" class="icon-btn" type="button">✕</button>
+            </div>
+
+            <div id="cartItems" class="cart-items"></div>
+
+            <div class="cart-footer">
+                <div class="cart-total">
+                    <span>المجموع</span>
+                    <strong id="cartTotal">0</strong>
+                </div>
+
+                <input id="custName" class="cart-input" placeholder="اسمك (اختياري)" />
+                <input id="custPhone" class="cart-input" placeholder="رقمك (اختياري)" />
+                <textarea id="custNote" class="cart-input" rows="2" placeholder="ملاحظة (مثال: سكر أقل)"></textarea>
+
+                <div class="cart-actions">
+                    <button id="clearCart" class="btn ghost" type="button">تفريغ</button>
+                    <button id="sendWhatsApp" class="btn primary" type="button">إرسال واتساب</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- TABLE MODAL -->
+    <div id="tableModal" class="modal" aria-hidden="true">
+        <div class="modal-box">
+            <h3>رقم الطاولة</h3>
+            <p>الرجاء إدخال رقم الطاولة للمتابعة</p>
+
+            <input id="tableModalInput" class="modal-input" placeholder="مثال: 5" inputmode="numeric" />
+
+            <div class="modal-actions">
+                <button id="tableModalSave" class="modal-btn primary" type="button">متابعة</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- PASSWORD MODAL -->
+    <div id="passwordModal" class="modal" aria-hidden="true">
+        <div class="modal-box">
+            <h3>كلمة مرور المدير</h3>
+            <p>أدخل كلمة المرور لتغيير رقم الطاولة</p>
+
+            <input id="passwordModalInput" class="modal-input" type="password" placeholder="كلمة المرور" />
+
+            <div class="modal-actions">
+                <button id="passwordModalSave" class="modal-btn primary" type="button">متابعة</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
