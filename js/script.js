@@ -155,10 +155,14 @@ function initApp() {
             title: "الكيك",
             items: [
                 { name: "تشيز كيك بلوباري", price: "5" },
-                { name: "تشيز كيك نوتيلا", price: "12-7" },
-                { name: "تشيز كيك لوتس", price: "12-7" },
-                { name: "تشيز كيك بستاشيو", price: "12-7" },
-                { name: "تشيز كيك كيندر", price: "12-7" },
+                { name: "تشيز كيك نوتيلا", price: "7" },
+                { name: "تشيز كيك نوتيلا", price: "12" },
+                { name: "تشيز كيك لوتس", price: "7" },
+                { name: "تشيز كيك لوتس", price: "12" },
+                { name: "تشيز كيك بستاشيو", price: "7" },
+                { name: "تشيز كيك بستاشيو", price: "12" },
+                { name: "تشيز كيك كيندر", price: "7" },
+                { name: "تشيز كيك كيندر", price: "12" },
                 { name: "كيك قطع نوتيلا", price: "10" },
                 { name: "كيك قطع لوتس", price: "10" },
             ]
@@ -190,11 +194,23 @@ function initApp() {
             ]
         },
         {
+            id: "refreshments",
+            title: "المرطبات",
+            items: [
+                { name: "براد صغير", price: "7" },
+                { name: "براد كبير", price: "10" },
+                { name: "بوظة صغير", price: "15" },
+                { name: "بوظة كبير", price: "20" },
+            ]
+        },
+        {
             id: "hot",
             title: "مشروبات ساخنة",
             items: [
-                { name: "قهوة تركي", price: "7-5" },
-                { name: "قهوة سبريسو", price: "10-6" },
+                { name: "قهوة تركي سينجل", price: "5" },
+                { name: "قهوة تركي دبل", price: "7" },
+                { name: "قهوة سبريسو سينجل", price: "6" },
+                { name: "قهوة سبريسو دبل", price: "10" },
                 { name: "نسكافيه", price: "5" },
                 { name: "شوكو فرنسي", price: "7" },
                 { name: "كابتشينو", price: "10" },
@@ -472,4 +488,4 @@ function initApp() {
     renderChips();
     renderMenu();
     updateCartUI();
-}
+}                  
