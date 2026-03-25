@@ -139,7 +139,7 @@ function initApp() {
             title: "الحلويات",
             items: [
                 { name: "كريب نوتيلا", price: "20" },
-                { name: "كريب دي اسنشل", price: "30" },
+                { name: "كريب دبي اسبشل", price: "30" },
                 { name: "كريب فيرو", price: "20" },
                 { name: "كريب كيندر", price: "20" },
                 { name: "كريب لوتس", price: "20" },
@@ -197,14 +197,17 @@ function initApp() {
             id: "refreshments",
             title: "المرطبات",
             items: [
-                { name: "براد صغير", price: "7" },
+                { name: "براد صغير", price: "5" },
+                { name: "براد وسط", price: "7" },
                 { name: "براد كبير", price: "10" },
-                { name: "بوظة صغير", price: "15" },
-                { name: "بوظة كبير", price: "20" },
+                { name: "بوظة صغير", price: "5" },
+                { name: "بوظة وسط", price: "10" },
+                { name: "بوظة كبير", price: "15" },
+                { name: "بوظة ححم أكبر", price: "20" },
             ]
         },
         {
-            id: "hot",
+            id: "hot", 
             title: "مشروبات ساخنة",
             items: [
                 { name: "قهوة تركي سينجل", price: "5" },
