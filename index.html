@@ -16,29 +16,36 @@
 <body>
     <header>
         <div class="top-bar">
-            <div class="logo-center">
-                <div class="brand">
-                    <img src="images/logo.png" alt="شعار كافي الفيروز" class="logo">
-                    <h1>كافي الفيروز<br><span>AL Fairouz Cafe</span></h1>
-                </div>
-            </div>
+            <div class="header-layout">
+                <!-- LEFT: table tools -->
+                <div class="header-side header-left">
+                    <div class="table-box">
+                        <div id="tableBadge" class="table-badge"></div>
+                    </div>
     
-            <div class="mobile-row">
-                <div class="search-box">
-                    <div class="search" role="search">
-                        <input id="q" type="search" placeholder="ابحث عن صنف ... (مثال: لوتس، كريب، موهيتو)">
+                    <div class="change-table-row">
+                        <button id="changeTableBtn" class="change-table-btn" type="button">
+                            تغيير الطاولة
+                        </button>
                     </div>
                 </div>
     
-                <div class="table-box">
-                    <div id="tableBadge" class="table-badge"></div>
+                <!-- CENTER: logo -->
+                <div class="logo-center">
+                    <div class="brand">
+                        <img src="images/logo.png" alt="شعار كافي الفيروز" class="logo">
+                        <h1>كافي الفيروز<br><span>AL Fairouz Cafe</span></h1>
+                    </div>
                 </div>
-            </div>
     
-            <div class="change-table-row">
-                <button id="changeTableBtn" class="change-table-btn" type="button">
-                    تغيير الطاولة
-                </button>
+                <!-- RIGHT: search -->
+                <div class="header-side header-right">
+                    <div class="search-box">
+                        <div class="search" role="search">
+                            <input id="q" type="search" placeholder="ابحث عن صنف">
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     
